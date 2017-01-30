@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html>	
+
+	
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id = "main">
+			<h1>Customer Relation Form</h1>
+			
+			<form >
+			<fieldset>
+			    <legend>Personal Information</legend>
+				
+				<table>
+  					<tr>
+    						<td>First Name <span style="color:red">*</span> </td>
+    						<td><input type="text" id="fname" name="fname" 								required maxlength="50"></td>
+						<td>(Maximum 50 Characters)</td>
+  					</tr>
+					<tr>
+    						<td>Middle Name</td>
+    						<td><input type="text" id="mname" name="mname" 								maxlength="50"></td>
+						<td>(Maximum 50 Characters)</td>
+  					</tr>
+					<tr>
+    						<td>Last Name <span style="color:red">*</span> </td>
+    						<td><input type="text" id="lname" name="lname" 								maxlength="50" required></td>
+						<td>(Maximum 50 Characters)</td>
+  					</tr>  
+						<tr>
+						<td>Gender <span style="color:red">*</span> </td>
+    						<td>
+							<input type="radio" name="gender" 								class="radio" value="male" checked> Male 									
+				  			<input type="radio" name="gender" 								class="radio" value="female" > Female 
+				  			<input type="radio" name="gender" 								class="radio"value="other"> Other 
+						</td>
+  					</tr>  
+  					</tr>  
+						<tr>
+						<td>Date of Birth <span style="color:red">*</span> </td>
+    						<td>
+							<input type="date" id="dob" name="dob" required>
+						</td>
+						<td>(dd/mm/yyyy)</td>
+  					</tr>  
+										
+					</tr>  
+						<tr>
+						<td>Primary contact number <span style="color:red">*</span> </td>
+    						<td>
+							<input type='tel' pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' title='Phone Number 								(Format: +99(99)9999-9999)' id="phoneno1" name="phoneno1" required>
+						
+						</td>
+						<td>	
+							(Format: +99(99)9999-9999)
+												
+						</td>
+  					</tr> 
+						<tr>
+						<td>Alternate contact number</td>
+    						<td>
+							<input type='tel' pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' title='Phone Number 								(Format: +99(99)9999-9999)'id="phoneno2" 								name="phoneno2">
+						
+						</td>
+						<td>	
+							(Format: +99(99)9999-9999)
+							 						
+						</td>
+  					</tr> 
+						 
+				</table>
+			</fieldset>
+			<fieldset>
+			    <legend>Residence Details</legend>
+			 	<h3>Permanent Address <span style="color:red">*</span> </h3>
+					<table>
+
+					<tr >
+						<td>Alternate contact number</td>
+    						<td>
+							<input type='tel' pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' title='Phone Number 								(Format: +99(99)9999-9999)'id="phoneno2" 								name="phoneno2">
+						
+						</td>
+						<td>	
+							(Format: +99(99)9999-9999)
+							 						
+						</td>
+  					</tr>   					<tr>
+    						<td>House Number</td>
+    						<td><input type="text" id="phno" name="phno" required > </td>
+						<td> </td>
+  					</tr>
+					<tr>
+    						<td>Street Name</td>
+    						<td><input type="text" id="pstreet" name="pstreet" required></td>
+						<td> </td>
+  					</tr>
+					<tr>
+    						<td>City</td>
+    						<td><input type="text" id="pcity" name="city" required></td>
+						<td> </td>
+  					</tr>
+					<tr>
+    						<td>State</td>
+    						<td><select id="pstate" name="pstate" required>
+						<option value="1">Delhi</option>
+						  <option value="2">Mumbai</option>
+						  <option value="3">Bangalore</option>
+						  <option value="4">Calcuta</option>							
+						</td>
+						<td> </td>
+  					</tr>
+					<tr>
+    						<td>Country</td>
+    						<td><select id="pcountry" name="pcountry" required>
+						<option value="1">India</option>
+						  <option value="2">Other</option>							
+						</td>
+						<td> </td>
+  					</tr>
+					</table>
+				
+				<h3>Current Address</h3>
+					<table>
+  					<tr>
+    						<td>House Number</td>
+    						<td><input type="text" id="hno" name="hno" > </td>
+						<td> </td>
+  					</tr>
+					<tr>
+    						<td>Street Name</td>
+    						<td><input type="text" id="street" name="street" ></td>
+						<td> </td>
+  					</tr>
+					<tr>
+    						<td>City</td>
+    						<td><input type="text" id="city" name="city" ></td>
+						<td> </td>
+  					</tr>
+					<tr>
+    						<td>State</td>
+    						<td><select id="state" name="state" >
+						<option value="1">Delhi</option>
+						  <option value="2">Mumbai</option>
+						  <option value="3">Bangalore</option>
+						  <option value="4">Calcuta</option>							
+						</td>
+						<td> </td>
+  					</tr>
+					<tr>
+    						<td>Country</td>
+    						<td><select id="country" name="country" >
+						<option value="1">India</option>
+						  <option value="2">Other</option>							
+						</td>
+						<td> </td>
+  					</tr>
+					</table>
+				
+			</fieldset>
+			<fieldset>
+			    <legend>User Details</legend>
+
+				<table>
+  					<tr>
+    						<td>Email <span style="color:red">*</span> </td>
+    						<td>
+							<input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>							</td>
+						<td> </td>
+  					</tr>
+					<tr>
+    						<td>Password <span style="color:red">*</span> </td>
+    						<td><input type="password" id="pass" required></td>
+						<td> </td>
+  					</tr>
+					<tr>
+    						<td>Confirm Password <span style="color:red">*</span> </td>
+    						<td><input type="password" id="cpass" required></td>
+						<td> </td>
+  					</tr>  
+				</table>
+			</fieldset>
+			<fieldset>
+			    <legend>Personal Interest</legend>
+				<input type="checkbox" value="sports">Sports
+				<input type="checkbox" value="books">Books 
+				
+				<input type="checkbox" value="fashion">Fashion
+				<input type="checkbox" value="photography" > Photography
+				<input type="checkbox" value="fishing">Fishing
+				<input type="checkbox" value="software">Software
+				<input type="checkbox" value="computer">Computer
+				<input type="checkbox" value="travel">Travel
+				
+			</fieldset>
+			<p>Subscribe to newsletter? <input type="radio" value="y" checked> Yes
+				  <input type="radio" value="n">No <br>	<p>
+				
+				  	
+			<input type="submit" value = "SUBMIT">
+			<input type="reset" value = "RESET">
+			</form>
+		</div>
+	</body>
+</html>
