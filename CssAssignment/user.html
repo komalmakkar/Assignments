@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>	
+
+	
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id = "main">
+			<ul>
+			  <li>Personal Information</li>
+			  <li>Residencial Details</li>
+			  <li style="background-color:#41997a">User Details</li>
+			  <li>Interests</li>
+			</ul>
+			<form action="interest.html">
+
+				<table>
+  					<tr>
+    						<td>Email <span style="color:red">*</span> </td>
+    						<td>
+							<input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required> 					</td>
+						<td> </td>
+  					</tr>
+					<tr>
+    						<td>Password <span style="color:red">*</span> </td>
+    						<td><input type="password" id="pass" required></td>
+						<td> </td>
+  					</tr>
+					<tr>
+    						<td>Confirm Password <span style="color:red">*</span> </td>
+    						<td><input type="password" id="cpass" required></td>
+						<td> </td>
+  					</tr>  
+				</table>
+				<input type="submit" value = "NEXT">	
+			</form>
+		</div>
+	</body>
+</html>

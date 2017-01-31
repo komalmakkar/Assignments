@@ -48,7 +48,7 @@
 
 
 body{
-	background-color: #212121;
+	background-color:#41997a;
 	background-repeat: no-repeat;;
 	background-position:center;
 	background-attachment: fixed;
@@ -56,15 +56,20 @@ body{
 }
 
 #main {
-	background-color: #424242;
 	border: 2px solid white;
-    	border-radius: 5px;
+    	border-radius:  5px 5px 5px 5px;
 	position: center;	
+	margin:auto;
+	float: center;
+	
+	height: auto;
+	padding:auto;
 	width: 70%;
 	left: 15%;
-	overflow: scroll;
+    	min-height: 100vh ;
 	color: white;
-	text-align: left;
+	background-color:#699686;
+	text-align: center;
 	position:absolute;
 	font-family: Arial, Helvetica, sans-serif;
 }	 
@@ -72,24 +77,6 @@ fieldset {
     padding: 12px 20px;
     margin: 12px 12px 12px 12px;
 
-}
-
-h1{
-	color:white;
-    border: 1px solid none;padding: 12px 20px;
-    margin: 8px 8px 8px 8px;
-
-	text-align:left;
-}
-p, input[type=submit], input[type=reset]{
-    border: 1px solid none;padding: 12px 20px;
-    margin: 8px 8px 8px 8px;
-    box-sizing: border-box;
-    background: none;
-    color:white;
-}
-input[type=checkbox]{
-	text-align: left;
 }
 select{
 	padding: 12px 20px;
@@ -100,27 +87,78 @@ select{
     	border-radius: 4px;
     	background: none;
     	color:white;
-	min-width: 255px;
-	min-height: 47px;
 }
-table {
-	width:100%;
-}
-td{
-	width: 33%
-}
-input[type=text] ,input[type=password],input[type=date],input[type=email],input[type = tel], #state{
-	width: 95%; 
-   padding: 12px 20px;
-	min-width: 255px;
-	min-height: 47px;
+li{
+    padding: 12px 20px;
+    width: 23%;
     margin: 8px 8px 8px 8px;
     box-sizing: border-box;
     border: 1px solid white;
     border-radius: 4px;
     background: none;
     color:white;
+	
+}
+h1{
+	color:white;
+	text-align:center;
+}
+p, input[type=reset]{
+    border: 1px solid none;padding: 12px 20px;
+    margin: 8px 8px 8px 8px;
+    box-sizing: border-box;
+    background: none;
+    color:white;
+}
+input[type=checkbox]{
+	text-align: left;
+}
+input[type=text] ,input[type=password],input[type=date],input[type=email],input[type = tel],select{
+    padding: 12px 20px;
+    margin: 8px 8px 8px 8px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 4px;
+    background: none;
+    color:white;
+	width: 100%;
+}
+td{ padding: 0px 12px;;
+    
+    box-sizing: border-box;
+    border: 1px;
+	width:33%;
+	text-align: left;
+}
+input[type=submit]{
+	padding: 12px 20px;
+    margin: 8px 8px 8px 8px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 4px;
+    background: none;
+    color:#80dfff;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 input[type=text]:focus {
     border: 3px solid white;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+

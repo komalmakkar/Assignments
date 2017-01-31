@@ -43,7 +43,8 @@
 					<tr>
 						<td>Date of Birth <span style="color:red">*</span> </td>
     						<td>
-							<input type="date" id="dob" name="dob"  							pattern='\d{2}[\/]\d{2}[\/]\d{4}' title='Date of birth  (Format mm/dd/yyyy)' required>
+							<input type="date" id="dob" name="dob"  							 title='Date of birth ' data-fv-date="true"
+required>
 						</td>
 						<td>(mm/dd/yyyy)</td>
   					</tr>  
@@ -156,7 +157,7 @@
   					<tr>
     						<td>Email <span style="color:red">*</span> </td>
     						<td>
-							<input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required> 					</td>
+							<input type="email" name="email" required> 					</td>
 						<td> </td>
   					</tr>
 					<tr>
@@ -183,8 +184,8 @@
 				<input type="checkbox" value="travel">Travel
 				
 			</fieldset>
-			<p>Subscribe to newsletter? <input type="radio" value="y" checked> Yes
-				  <input type="radio" value="n">No <br>	<p>
+			<p>Subscribe to newsletter? <input type="radio" name ="subscribe" value="y" checked> Yes
+				  <input type="radio" value="n" name ="subscribe" >No <br>	<p>
 				
 				  	
 			<input type="submit" value = "SUBMIT">

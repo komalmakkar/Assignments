@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>	
+
+	
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id = "main">
+			 <ul>
+			  <li style="background-color:#41997a">Personal Information</li>
+			  <li>Residencial Details</li>
+			  <li>User Details</li>
+			  <li>Interests</li>
+			</ul> 
+			<form action="residencial.html">
+			
+				<table>
+  					<tr>
+    						<td >First Name <span style="color:red">*</span> </td>
+    						<td><input type="text" id="fname" name="fname" 								required maxlength="50"></td>
+						<td>(Maximum 50 Characters)</td>
+  					</tr>
+					<tr>
+    						<td>Middle Name</td>
+    						<td><input type="text" id="mname" name="mname" 								maxlength="50"></td>
+						<td>(Maximum 50 Characters)</td>
+  					</tr>
+					<tr>
+    						<td>Last Name <span style="color:red">*</span> </td>
+    						<td><input type="text" id="lname" name="lname" 								maxlength="50" required></td>
+						<td>(Maximum 50 Characters)</td>
+  					</tr>  
+						<tr>
+						<td>Gender <span style="color:red">*</span> </td>
+    						<td>
+							<input type="radio" name="gender" 								class="radio" value="male" checked> Male 									
+				  			<input type="radio" name="gender" 								class="radio" value="female" > Female 
+				  			<input type="radio" name="gender" 								class="radio"value="other"> Other 
+						</td>
+  					</tr>    
+					<tr>
+						<td>Date of Birth <span style="color:red">*</span> </td>
+    						<td>
+							<input type="date" id="dob" name="dob"  							pattern='\d{2}[\/]\d{2}[\/]\d{4}' title='Date of birth  (Format mm/dd/yyyy)' required>
+						</td>
+						<td>(mm/dd/yyyy)</td>
+  					</tr>  
+						  
+					<tr>
+						<td>Primary contact number <span style="color:red">*</span> </td>
+    						<td>
+							<input type='tel' pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' title='Phone Number 								(Format: +99(99)9999-9999)' id="phoneno1" name="phoneno1" required>
+						
+						</td>
+						<td>	
+							(Format: +99(99)9999-9999)
+												
+						</td>
+  					</tr> 
+					<tr>
+						<td>Alternate contact number</td>
+    						<td>
+							<input type='tel' pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' title='Phone Number 								(Format: +99(99)9999-9999)'id="phoneno2" 								name="phoneno2">
+						
+						</td>
+						<td>	
+							(Format: +99(99)9999-9999)
+							 						
+						</td>
+  					</tr> 
+						 
+				</table>
+			<input type="submit" value = "NEXT">	
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>	
+
+	
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id = "main">
+			<form action="personal.html">
+			<h1>Coming Soon... </h1>
+			<h3>To avail pre-launch offers, Register below</h3>
+			<input type="submit" value = "REGISTER">
+			</form>
+		</div>
+	</body>
+</html>
